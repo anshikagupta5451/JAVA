@@ -1,0 +1,25 @@
+class voteException extends RuntimeException
+ {
+     public voteException(String obj)
+     {
+         super(obj);
+         }
+     
+ }
+ public class Main{
+    public static void main (String[] args) {
+        int age=3;
+        try{
+            if(age<18)
+            throw new voteException("not valid");
+            
+        }
+    }
+    catch(voteException obj)
+    {
+        obj.printStackTrace():
+    }
+      //throw new MyExp("my exception")
+    
+    }
+}
