@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner s=new Scanner(System.in);
+	    // try with resources
+	    try(s)
+	    {
+	       // int i=s.next();//ERROR because it takes string input
+	        int i=Integer.parseInt(s.next());
+	        
+	    }
+	    catch(Exception obj)
+	    {
+	        obj.printStackTrace();
+	       // System.out.println(obj.toString());
+	       // System.out.println(obj.getMessage());
+	       // System.out.println(obj);
+	    }
+	    System.out.println("end");
+// 	    while(s.hasNeXT())
+// 	    {
+// 	        S.Next();
+// 	    }
+// 		//System.out.println("Hello World");
+	}
+}
