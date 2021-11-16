@@ -1,0 +1,27 @@
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+//multi threading- one process having multiple threads is called multiple threading ,space matters.threa is the part of processor
+//thread is the sub process of the main process// multi thrading - to increase the utlilty of the system
+// example -puppet show
+public class Main
+{
+	public static void main(String[] args) {
+	    Thread obj=Thread.currentThread();// it returns the current class thread
+		System.out.println(obj.getName());
+		//if we want to change the name of the thread 
+		obj.setName("anshikaa");
+		System.out.println(obj.getId());
+		System.out.println(obj.isAlive());//if it is alive it is in running state else it is executed
+		System.out.println(obj.getPriority());//to know the priority of the particular thread
+		System.out.println(obj.isDaemon());//to check in thread you are working is daemon thread or not
+		//
+	}
+}
+//how to create multi threading application
+//there are two ways
+// by extending the thread class 
+// by implementing the runable interface-it is known as functional interface-one method -rum() method //lambda expression
