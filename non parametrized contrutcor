@@ -1,0 +1,22 @@
+lass main{
+    int a;
+    int b;
+    public void hello(){
+        System.out.println(a+b);
+    }
+    main()
+    {
+        this.a=a;
+        a=10;
+        this.b=b;
+        b=10;
+    }
+}
+public class Anshu {
+
+    public static void main(String[] args) {
+        System.out.println("hello");
+        main obj=new main();
+        obj.hello();
+    }
+}
