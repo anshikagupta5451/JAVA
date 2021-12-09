@@ -1,0 +1,27 @@
+import java.util.*;
+class all {
+    public static void main(String[] args) {
+//        int a=100,b=0;
+//        int c=a/b;
+//        System.out.println(c);
+        int a, b, result;
+        Scanner s = new Scanner(System.in);
+        System.out.println("enter num and denom");
+        try {
+            a = s.nextInt();
+            //b = s.nextInt();
+            result = a*a;
+            System.out.println(result);
+     }
+//        catch (ArithmeticException e) {
+//            System.out.println("cannot dicvide by zero");
+
+//        }
+        catch (InputMismatchException e) {
+            System.out.println(e);
+            System.out.println("input is not in the correct form");
+        }
+    }
+}
+
+
