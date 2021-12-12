@@ -1,0 +1,33 @@
+mport java.sql.SQLOutput;
+import java.util.Scanner;
+class YoungerAgeException extends RuntimeException
+{//unchecked exception
+    YoungerAgeException(String msg) {
+        super(msg);
+    }
+
+
+}
+public class throww {
+    public static void main(String[] args) {
+
+        Scanner s = new Scanner(System.in);
+        System.out.println("enter your age");
+        int age=s.nextInt();
+        try {
+            if (age < 18) {
+                throw new YoungerAgeException("eliigible");
+            } else {
+                System.out.println("you are elegible");
+            }
+        }
+        catch(YoungerAgeException e)
+            {
+                e.printStackTrace();
+            }
+        System.out.println("hello");
+        }
+
+
+    }
+
