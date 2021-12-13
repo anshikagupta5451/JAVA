@@ -1,0 +1,35 @@
+class booktheater
+{
+    int tots=10;
+    synchronized void bookseat(int seats )
+    {
+        if(tots>=seats)
+        {
+            System.out.println(seats+"  seats booked successfully");
+            tots=tots-seats;
+            System.out.println("seats left :"+tots);
+        }
+        else
+        {
+            System.out.println("sorry");
+            System.out.println("seats left :"+tots);
+        }
+    }
+}
+public class throww extends Thread{
+      static booktheater b;
+      int seats;
+    public void run()
+    {
+        b.bookseat(seats);
+    }
+    public static void main(String[] args) {
+         b=new booktheater();
+         throww d=new throww();
+         d.seats=7;
+         d.start();
+         throww a=new throww();
+         a.seats=6;
+         a.start();
+    }
+
