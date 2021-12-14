@@ -1,0 +1,10 @@
+import java.util.Scanner;
+class throww{
+    public static void main(String[] args) {
+        Scanner x=new Scanner(System.in);
+        System.out.println("enter no");
+        int i= x.nextInt();
+        String s=Integer.toBinaryString(i);
+        System.out.println(s);
+    }
+}
