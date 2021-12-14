@@ -1,0 +1,29 @@
+import java.util.Scanner;
+import java.util.regex.*;
+public class throww{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        {
+            while(true)
+            {
+                System.out.println("enter regex pattern");
+                String rp=sc.nextLine();
+                Pattern pattern=Pattern.compile(rp);
+                Matcher ma=pattern.matcher("Welcome to Edureka Youtube Channel");
+                boolean f = false;
+
+                while(ma .find())
+                {
+                    System.out.println("found the text" + ma.group() + "  starting the index  " + ma.start() + "  ending index  " + ma.end());
+                    f = true;
+                }
+                    if(!f)
+                    {
+                        System.out.println("matcher not found");
+                     }
+
+            }
+        }
+    }
+}
