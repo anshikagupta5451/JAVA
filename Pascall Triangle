@@ -1,0 +1,17 @@
+//by permutation and combination
+public static void main(String args[])
+{
+int row=0;
+int star=1;
+while(row<n)
+{
+int i=0;
+while(i<star)
+{
+System.out.print(val +"");
+val=(val*(row-i))/(i+1);
+i++;
+row++;
+star++;
+System.out.println();
+}
